@@ -10,6 +10,7 @@
 #  #define STUB(x) x
 
 bindgen \
+	--rust-target nightly \
 	--opaque-type std::.* \
 	--allowlist-type cocos2d::.* \
 	--allowlist-function cocos2d::.* \
@@ -17,6 +18,7 @@ bindgen \
 	-osrc/bindings.rs \
 	\
 	wrapper.h -- \
+	--target i686-pc-windows-msvc \
 	-xc++ \
 	-Icocos-headers/cocos2dx \
 	-Icocos-headers/cocos2dx/include \
