@@ -1,3 +1,14 @@
+# Prerequesites:
+# Have clang installed
+# cargo install bindgen
+# Download https://github.com/HJFod/cocos-headers into this folder
+# Go into file cocos-headers/cocos2dx/include/ccMacros.h
+# Replace the lines:
+#   #define STUB(className)
+#   (..)
+# with:
+#  #define STUB(x) x
+
 bindgen \
 	--opaque-type std::.* \
 	--allowlist-type cocos2d::.* \
