@@ -3,7 +3,7 @@ bindgen \
 	--allowlist-type cocos2d::.* \
 	--allowlist-function cocos2d::.* \
 	--allowlist-var cocos2d::.* \
-	-osrc/sys.rs \
+	-osrc/bindings.rs \
 	\
 	wrapper.h -- \
 	-xc++ \
