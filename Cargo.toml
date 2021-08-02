@@ -2,7 +2,7 @@
 name = "rcocos2d-sys"
 description = "Raw FFI bindings to RobTop's modified version of cocos2d v2.3.3"
 license = "MIT"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
