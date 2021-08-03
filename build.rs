@@ -1,3 +1,4 @@
 fn main() {
-	println!("cargo:rustc-link-lib=cocos-headers/cocos2dx/libcocos2d.lib");
+	println!("cargo:rustc-link-search=cocos-headers/cocos2dx");
+	println!("cargo:rustc-link-lib=libcocos2d");
 }
